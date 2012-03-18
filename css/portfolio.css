@@ -1,0 +1,137 @@
+html, body {
+height:100%;
+background:#b93636;
+}
+
+body #fullbg {
+	height:100%;
+
+	background: #ee2026;
+	background: -moz-radial-gradient(center, ellipse cover,  #ee2026 0%, #b93636 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ee2026), color-stop(100%,#b93636));
+	background: -webkit-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
+	background: -o-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
+	background: radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2026', endColorstr='#b93636',GradientType=1 );
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+h1 {
+	margin-bottom:28px;
+}
+
+h1 a {
+	display:block;
+	height:60px;
+	width:247px;
+	text-align:left;
+	text-indent:-9999px;
+	outline:0;
+	background:url(../images/logo.png) no-repeat;
+}
+
+#nav {
+	float:right;
+	margin-top:-70px;
+}
+
+#nav a {
+	color:#FFF;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:17px;
+	margin-left:37px;
+}
+
+#nav a:hover {
+	text-decoration:none;
+	color:#979797;
+}
+
+#main {
+	padding-top:38px;
+	width:770px;
+	margin:auto;
+	padding-left:20px;
+	position:relative;
+}
+
+.thumbnails li.span3 {
+	width:250px;
+}
+
+.thumbnails li.span3 a {
+	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.50);
+	-moz-box-shadow:    3px 3px 5px rgba(0, 0, 0, 0.50);
+	box-shadow:         3px 3px 5px rgba(0, 0, 0, 0.50);
+	border:0;
+	border-radius:0;
+
+	background:#979797;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(151,151,151,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(151,151,151,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(151,151,151,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(151,151,151,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(151,151,151,1) 100%);
+	background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(151,151,151,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#979797',GradientType=0 );
+
+	text-decoration:none !important;
+}
+
+.hover-state {
+	display:none;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:#981723;
+	opacity:0.90;
+	color:#FFF;
+	text-align:center;
+	width:100%;
+	padding:36px 0;
+	font-size:20px;
+	font-style:italic;
+}
+
+.thumbnail {
+	position:relative;
+	z-index:1;
+}
+
+.thumbnail:hover .hover-state {
+	display:block;
+}
+
+/* Portfolio item popups */
+.popup {
+	display:none;
+	position:absolute;
+	padding:10px;
+	top:125px;
+	left:-5px;
+	background:#FFF;
+	width:780px;
+	z-index:2;
+}
+
+.popup .image {
+	text-align:center;
+	background:#e2e2e2;
+	padding:30px 0;
+}
+
+.popup p {
+	display:block;
+	padding:20px 50px;
+	font-size:12px;
+}
+
+/* About page */
+#about, #about * {
+	color:#FFF;
+}
