@@ -1,50 +1,48 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html, body {
-height:100%;
-background:#b93636;
+	height: 100%;
+	background: #333333;
 }
 
 body #fullbg {
-	height:100%;
-
-	background: #ee2026;
-	background: -moz-radial-gradient(center, ellipse cover,  #ee2026 0%, #b93636 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ee2026), color-stop(100%,#b93636));
-	background: -webkit-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
-	background: -o-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
-	background: radial-gradient(center, ellipse cover,  #ee2026 0%,#b93636 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2026', endColorstr='#b93636',GradientType=1 );
-
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center top;
-}
-
-h1 {
-	margin-bottom:28px;
+	background: #fff;
 }
 
 h1 a {
 	display:block;
-	height:60px;
-	width:247px;
-	text-align:left;
-	text-indent:-9999px;
+	height:75px;
 	outline:0;
 	background:url(../images/logo.png) no-repeat;
+	text-transform: uppercase;
+	color:#000;
+	text-decoration: none;
+	padding: 20px 0 0 90px;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+h1 a:hover {
+	color:#000;
+	text-decoration: none;
+}
+
+body .container {
+	width: 850px;
 }
 
 #nav {
 	float:right;
-	margin-top:-70px;
+	margin-top:-45px;
 }
 
 #nav a {
-	color:#FFF;
+	color: #000;
 	text-transform:uppercase;
-	font-weight:bold;
-	font-size:17px;
-	margin-left:37px;
+	font-size:14px;
 }
 
 #nav a:hover {
@@ -53,11 +51,14 @@ h1 a {
 }
 
 #main {
-	padding-top:38px;
 	width:770px;
 	margin:auto;
 	padding-left:20px;
 	position:relative;
+}
+
+.thumbnails {
+	margin-left: 30px;
 }
 
 .thumbnails li.span3 {
@@ -107,13 +108,17 @@ h1 a {
 	display:block;
 }
 
+#portfolio {
+	position: relative;
+}
+
 /* Portfolio item popups */
 .popup {
 	display:none;
 	position:absolute;
 	padding:10px;
-	top:125px;
-	left:-5px;
+	top: 15px;
+	left: 55px;
 	background:#FFF;
 	width:780px;
 	z-index:2;
@@ -132,6 +137,43 @@ h1 a {
 }
 
 /* About page */
+#about {
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
 #about, #about * {
 	color:#FFF;
+	background: #333333;
+}
+
+#about h3 {
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+#about p {
+	margin-bottom: 20px;
+}
+
+footer {
+	padding: 20px 0;
+	clear: both;
+}
+
+footer,
+footer a,
+footer a:hover {
+	color: #fff;
+	font-size: 11px;
+}
+
+footer .left {
+	float: left;
+}
+
+footer .right {
+	float: right;
 }
