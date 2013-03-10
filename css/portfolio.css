@@ -1,53 +1,59 @@
 * {
+	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
-	background: #333333;
+	background: #000;
 }
 
 body #fullbg {
+	padding: 30px 0 0;
 	background: #fff;
+}
+
+header {
+	background: #000;
+	height: auto;
+	padding: 7px 0;
+}
+
+header .wrap {
+	background: #333232; /* Old browsers */
+	background: -moz-linear-gradient(top,  #333232 0%, #222222 54%, #1b1a1b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333232), color-stop(54%,#222222), color-stop(100%,#1b1a1b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #333232 0%,#222222 54%,#1b1a1b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #333232 0%,#222222 54%,#1b1a1b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #333232 0%,#222222 54%,#1b1a1b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #333232 0%,#222222 54%,#1b1a1b 100%); /* W3C */
 }
 
 h1 a {
 	display:block;
-	height:75px;
+	padding: 6px 0 0 70px;
+	width: 200px;
+	height: 60px;
 	outline:0;
 	background:url(../images/logo.png) no-repeat;
+	background-size: 60px 60px;
 	text-transform: uppercase;
-	color:#000;
+	color:#FFF;
 	text-decoration: none;
-	padding: 20px 0 0 90px;
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 30px;
+	line-height: 25px;
+	word-wrap: break;
 }
 
 h1 a:hover {
-	color:#000;
+	color:#FFF;
 	text-decoration: none;
 }
 
 body .container {
 	width: 850px;
-}
-
-#nav {
-	float:right;
-	margin-top:-45px;
-}
-
-#nav a {
-	color: #000;
-	text-transform:uppercase;
-	font-size:14px;
-}
-
-#nav a:hover {
-	text-decoration:none;
-	color:#979797;
 }
 
 #main {
@@ -82,14 +88,13 @@ body .container {
 	position:absolute;
 	left:0;
 	bottom:0;
-	background:#981723;
+	background:#000;
 	opacity:0.90;
 	color:#FFF;
 	text-align:center;
 	width:100%;
 	padding:36px 0;
-	font-size:20px;
-	font-style:italic;
+	font-size:16px;
 }
 
 .thumbnail {
@@ -135,15 +140,10 @@ body .container {
 	margin-bottom: 20px;
 }
 
-#about, #about * {
-	color:#FFF;
-	background: #333333;
-}
-
 #about h3 {
-	text-decoration: underline;
+	text-decoration: none;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 26px;
 	margin-bottom: 12px;
 }
 
