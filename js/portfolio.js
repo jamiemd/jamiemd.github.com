@@ -4,8 +4,15 @@ n.ready(function(){
 
 	function closeItem(e){
 		current.setStyle('display', '')
+		n.one('body').removeClass('popup-active')
 		current = false
 		e.stop()
+	}
+
+	function showCurtain() {
+		n.one('body').addClass('popup-active')
+		var curtain = n.one('#curtain')
+		curtain.setStyle('height', document.body.clientHeight + 'px')
 	}
 
 	function clickThumbnail(e) {
@@ -24,28 +31,13 @@ n.ready(function(){
 			opacity:1
 		}, 0.20)
 
+		showCurtain()
+
 		n.one('body').once('click', closeItem)
 		e.stop()
 	}
 
 	n.all('.thumbnails li').each(function(li){
 		li.on('click', clickThumbnail)
-	})
-
-	// Handle nav clicks
-	n.one('#nav').on('click', function(e){
-
-		if (e.target.get('nodeName').toLowerCase() !== 'a' ) {
-			return
-		}
-
-		// Reset containers
-		n.all('#main section').setStyle('display', 'none')
-
-		var href = e.target.get('href')
-			, id = href.substr(href.indexOf('#'))
-
-		n.one(id).setStyle('display', 'block');
-		e.stop();
 	})
 })

@@ -64,7 +64,7 @@ body .container {
 }
 
 .thumbnails {
-	margin-left: 30px;
+	margin-left: 0px;
 }
 
 .thumbnails li.span3 {
@@ -72,9 +72,11 @@ body .container {
 }
 
 .thumbnails li.span3 a {
+	/*
 	-webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.50);
 	-moz-box-shadow:    3px 3px 5px rgba(0, 0, 0, 0.50);
 	box-shadow:         3px 3px 5px rgba(0, 0, 0, 0.50);
+	*/
 	border:0;
 	border-radius:4;
 
@@ -86,10 +88,10 @@ body .container {
 .hover-state {
 	display:none;
 	position:absolute;
-	left:0;
-	bottom:0;
-	background:#000;
-	opacity:0.90;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.80;
 	color:#FFF;
 	text-align:center;
 	width:100%;
@@ -106,32 +108,68 @@ body .container {
 	display:block;
 }
 
-#portfolio {
-	position: relative;
+/* Portfolio item popups */
+body #curtain {
+	display: none;
 }
 
-/* Portfolio item popups */
+body.popup-active #curtain {
+	display: block;
+    z-index:0;
+    position:fixed;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity:0.4;
+}
+
 .popup {
 	display:none;
 	position:absolute;
 	padding:10px;
-	top: 15px;
-	left: 55px;
+	width: 100%;
+	top: 260px;
+	left: 0;
 	background:#FFF;
-	width:780px;
 	z-index:2;
 }
 
 .popup .image {
-	text-align:center;
-	background:#e2e2e2;
+	float: right;
+	margin-left: 15px;
 	padding:30px 0;
+}
+
+.popup h1 {
+	padding: 30px 0 0;
+	color: #c1272d;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.popup h2 {
+	width: 280px;
+	color: #000;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 6px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .popup p {
 	display:block;
-	padding:20px 50px;
 	font-size:12px;
+	max-width: 280px;
+}
+
+.popup p.description {
+	font-style: italic;
 }
 
 /* About page */
