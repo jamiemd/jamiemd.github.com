@@ -53,7 +53,7 @@ h1 a:hover {
 }
 
 body .container {
-	width: 850px;
+	width: 790px;
 }
 
 #main {
@@ -61,6 +61,10 @@ body .container {
 	margin:auto;
 	padding-left:20px;
 	position:relative;
+}
+
+#portfolio {
+	padding-bottom: 30px;
 }
 
 .thumbnails {
@@ -97,6 +101,9 @@ body .container {
 	width:100%;
 	padding:36px 0;
 	font-size:16px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+
 }
 
 .thumbnail {
@@ -172,6 +179,11 @@ body.popup-active #curtain {
 	font-style: italic;
 }
 
+.popup .container {
+	width:850px;
+}
+
+
 /* About page */
 #about {
 	padding-top: 20px;
@@ -182,11 +194,11 @@ body.popup-active #curtain {
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 26px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 
 #about p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 footer {
